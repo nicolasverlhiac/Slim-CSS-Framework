@@ -1,4 +1,4 @@
-[Logo de SLim](http://slim-css.com/img/logo-slim-badge.png "Logo de Slim")
+[![Slim website](http://slim-css.com/img/logo-slim.png "Slim website")](http://slim-css.com)
 
 Slim - Framework CSS
 ====================
