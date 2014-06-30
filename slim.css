@@ -1158,7 +1158,9 @@ button:focus {
   height: 40px;
   display: block;
   -webkit-appearance: none;
-  padding: 8px 12px;
+  padding: 15px 12px;
+  height: 100%;
+  width: 100%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
@@ -1192,15 +1194,12 @@ input[type="submit"]{
 
 .input-success,
 .group-input-success input {
-  border-left: 5px solid #27ae60;
   border-color: #27ae60;
-  border-radius: 0 2px 2px 0;
   color: #27ae60;
 }
 
 .input-problem,
 .group-input-problem input {
-  border-left: 5px solid #f39c12;
   border-color: #f39c12;
   border-radius: 0 2px 2px 0;
   color: #f39c12;
@@ -1208,7 +1207,6 @@ input[type="submit"]{
 
 .input-error,
 .group-input-error input {
-  border-left: 5px solid #e74c3c;
   border-color: #e74c3c;
   border-radius: 0 2px 2px 0;
   color: #e74c3c;
@@ -1231,20 +1229,19 @@ input[type="submit"]{
 }
 
 .input-icon input{
-  padding-left: 55px;
-
+  padding-left: 60px;
 }
 
 .input-icon span {
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 46px;
+  line-height: 46px;
   border-radius: 2px;
   position: absolute;
   left: 0;
   text-align: center;
   top: 32px;
-  width: 40px;
+  width: 46px;
   z-index: 3;
   background: #1abc9c;
   color: #fff;
@@ -1654,6 +1651,9 @@ img {
 .end {
   margin-bottom: 0 !important;
 }
+.begin {
+  margin-top: 0 !important;
+}
 .normal {
   font-weight: normal;
 }
@@ -1699,6 +1699,10 @@ img {
   color: #2980b9;
 }
 
+.info-box p{
+  padding-left: 75px;
+}
+
 .danger-box {
   background: #FCF8F2;
   color: #e67e22;
@@ -1723,6 +1727,10 @@ img {
   color: #e67e22;
 }
 
+.danger-box p{
+  padding-left: 75px;
+}
+
 .error-box {
   background: #FDF7F7;
   color: #e74c3c;
@@ -1741,8 +1749,13 @@ img {
   padding: 28px 20px 0 10px;
   float: left;
 }
+
 .error-box a{
   font-weight: 900;
   text-decoration: underline;
   color: #e74c3c;
+}
+
+.error-box p{
+  padding-left: 75px;
 }
