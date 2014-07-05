@@ -1,5 +1,19 @@
 [![Slim website](http://slim-css.com/img/logo-slim.png "Slim website")](http://slim-css.com)
 
+Slim - CSS Framework
+====================
+
+Framework web accelerator project.
+
+If you develop yourself your websites, the use of this framework is very simple. Structure already ready with a neutral CSS and Skin type Flat Design. 
+
+Documentation
+-------------
+
+[Slim Documentation](http://slim-css.com/"Slim Documentation")
+
+--------------------------------------------------------------
+
 Slim - Framework CSS
 ====================
 
