@@ -4,8 +4,8 @@
 **************************************************************************************/
 
 /** 
- * Version : v0.32
- * Last Update : 20/06/2014
+ * Version : v0.34
+ * Last Update : 10/07/2014
  * Oficial website : http://slim-css.com
  * Documentation : http://slim-css.com/grille.php
  */
@@ -14,15 +14,15 @@
    ======================================= */
 
    /*
-    * 1 - line 32    =/   Normalize 
-    * 2 - line 79    =/   Typographie 
-    * 3 - line 361   =/   Grilles
-    * 4 - line 777   =/   Tableaux
-    * 5 - line 848   =/   Navigation
-    * 6 - line 1117  =/   Formulaires
-    * 7 - line 1291  =/   Boutons
-    * 8 - line 1443  =/   Images, Vidéos et Embed
-    * 9 - line 1472  =/   Class d'Aide
+    * 1 -  =/   Normalize 
+    * 2 -  =/   Typographie 
+    * 3 -  =/   Grilles
+    * 4 -  =/   Tableaux
+    * 5 -  =/   Navigation
+    * 6 -  =/   Formulaires
+    * 7 -  =/   Boutons
+    * 8 -  =/   Images, Vidéos et Embed
+    * 9 -  =/   Class d'Aide
     */
 
  
@@ -1335,6 +1335,47 @@ input[type="radio"].input-error{
   vertical-align: bottom;
 }
 
+/* = Boutons light
+-----------------------------------------------------------------------------*/
+
+.btn-lg{
+  color: #1ABC9C;
+  border-radius: 3px;
+  padding: 13px 30px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border: 2px solid #1ABC9C;
+  box-shadow: none;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.btn-lg:hover {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+/* = Class d'aide pour les Boutons & Boutons light
+-----------------------------------------------------------------------------*/
+
+.btn-square {
+  border-radius: 0;
+}
+
+.btn-round {
+  border-radius: 100px;
+}
+
 /* = Boutons avec Icones
 -----------------------------------------------------------------------------*/
 
@@ -1533,12 +1574,6 @@ img {
 .bg-asbestos{
   background: #7f8c8d
 }
-
-
-
-
-
-
 .turquoise {
   color: #1abc9c; 
 }    
