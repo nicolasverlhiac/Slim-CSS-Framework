@@ -1,0 +1,268 @@
+/*
+ * =/ Navigation
+ * 
+**************************************************************************************/
+
+/* = Barre de Navigation Horizontale - normale
+-----------------------------------------------------------------------------*/
+.navbar {
+  margin-bottom: 1.6em;
+}
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+}
+.navbar ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar ul li {
+  float: left;
+  margin-right: 1.6em;
+}
+
+.navbar ul li a,
+.navbar ul li span {
+  display: block;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: #3498db;
+}
+.navbar ul li.current a,
+.navbar ul li span {
+  text-decoration: none;
+  cursor: text;
+  color: rgba(0, 0, 0, 0.4);
+}
+/* = Barre de Navigation pleine largeur - Horizontale
+-----------------------------------------------------------------------------*/
+
+.full ul {
+  width: 100%;
+}
+.full li {
+  float: none !important;
+  margin: 0;
+  display: table-cell;
+  width: 1%;
+  text-align: center;
+}
+.full li a,
+.full li span {
+  display: block;
+}
+
+/* = Double Barres de Navigation - Horizontale
+-----------------------------------------------------------------------------*/
+
+/*Barre de Navigation à gauche*/
+.navbar-left {
+  float: left;
+}
+
+/*Barre de Navigation à droite*/
+.navbar-right {
+  float: right;
+}
+.navbar-right ul li {
+  margin-right: 0;
+  margin-left: 1.6em;
+}
+
+/* = Barre de Navigation - Verticale
+-----------------------------------------------------------------------------*/
+
+.nav {
+  margin-bottom: 1.6em;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+}
+.nav ul li ul {
+  margin-left: 2em;
+  font-size: .95em;
+}
+.nav ul li a,
+.nav ul li span {
+  display: block;
+  padding: 9px 0;
+}
+.nav ul li ul li a,
+.nav ul li ul li span {
+  padding: 4px 0;
+}
+.nav ul li a {
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  color: #3498db;
+}
+.nav ul li.current a,
+.nav ul li span {
+  text-decoration: none;
+  cursor: text;
+  color: #95a5a6;
+}
+
+/* = Barre de Navigation avec des séparateurs - Verticale
+-----------------------------------------------------------------------------*/
+
+/* Stroked */
+.nav-separ li {
+  border-bottom: 1px solid #eee;
+}
+.nav-separ li:last-child {
+  border-bottom: none;
+}
+
+/* = Barre de Navigation avec des séparateurs et en boite - Verticale
+-----------------------------------------------------------------------------*/
+
+.nav-box ul {
+  border: 1px solid #eee;
+  border-bottom: 0;
+}
+.nav-box ul li {
+  border-bottom: 1px solid #eee;
+}
+.nav-box ul li a,
+.nav-box ul li span {
+  padding: 9px 13px;
+}
+.nav-box ul li a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* = Barre de Navigation avec des séparateurs - Horizontale
+-----------------------------------------------------------------------------*/
+
+/*Séparateur ">" */
+.navbar-fil {
+  margin-bottom: 1.6em;
+}
+.navbar-fil:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-fil ul {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.4);
+  list-style: none;
+  margin: 0;
+}
+.navbar-fil ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-fil ul li {
+  float: left;
+  margin-right: 3px;
+}
+.navbar-fil li + li:before {
+  content: " > ";
+  color: #aaa;
+  font-size: 12px;
+  margin: 0 3px;
+  position: relative;
+  top: -1px;
+}
+.navbar-fil ul li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.navbar-fil ul li.current a {
+  text-decoration: none;
+  cursor: text;
+  color: rgba(0, 0, 0, 0.4);
+}
+.navbar-fil ul li a:hover {
+  color: #0f0f0f;
+  text-decoration: underline;
+}
+
+/*Séparateur " | " */
+.sep-pipe li + li:before {
+  content: " | ";
+  top: 0;
+}
+/*Séparateur " / " */
+.sep-slash li + li:before {
+  content: " / ";
+  top: 0;
+}
+
+/* =Pagination
+-----------------------------------------------------------------------------*/
+.pagination {
+  position: relative;
+  left: -9px;
+  margin-left: 0;
+  list-style: none;
+}
+.pagination:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pagination li {
+  float: left;
+  margin-right: 2px;
+}
+.pagination li a,
+.pagination li span{
+  display: block;
+  padding: 9px 13px;
+  line-height: 1;
+  border-radius: 2px;
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.pagination span,
+.pagination .current {
+  border: 1px solid #ddd;
+}
+.pagination li a:focus,
+.pagination li a:hover {
+  text-decoration: none;
+  background-color: #1abc9c;
+  color: #fff;
+}
+/* =Responsive
+-----------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .navbar-left,
+  .navbar-right,
+  .navbar ul li,
+  .navbar-right ul li,
+  .subnav-right ul,
+  .subnav ul li,
+  .subnav-right ul li {
+    float: none;
+    text-align: center;
+  }
+  .navbar ul li,
+  .navbar-right ul li,
+  .subnav ul li,
+  .subnav-right ul li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .full ul {
+    width: auto;
+  }
+  .full li {
+    display: block;
+    width: auto;
+  }
+}

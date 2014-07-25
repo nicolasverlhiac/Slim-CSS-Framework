@@ -1,0 +1,284 @@
+/*
+ * =/ Typographie
+ * 
+**************************************************************************************/
+
+body {
+  background: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Titres
+   ========================================================================== */
+
+.titre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.111em;
+  margin-bottom: .25em;
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.111em;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 24px;
+  line-height: 1.333em;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: .333em;
+}
+h5 {
+  font-size: 14px;
+  line-height: 1.6em;
+  margin-bottom: .25em;
+}
+h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.6em;
+  margin-bottom: .25em;
+}
+/* Sous-titre
+   ========================================================================== */
+
+.soustitre{
+  color: rgba(0,0,0,0.6);
+}
+
+h1.soustitre,
+h2.soustitre,
+h3.soustitre,
+h4.soustitre,
+h5.soustitre {
+  font-weight: 300;
+}
+h1.soustitre {
+  font-size: 30px;
+}
+h2.soustitre {
+  font-size: 24px;
+}
+h3.soustitre {
+  font-size: 18px;
+}
+h4.soustitre {
+  font-size: 14px;
+}
+h5.soustitre {
+  font-size: 12px;
+}
+
+/* Paragraphe
+   ========================================================================== */
+
+p.lead {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-bottom: .75em;
+}
+
+
+/* Listes
+   ========================================================================== */
+
+p,
+ul,
+ol,
+dl,
+dd,
+dt,
+blockquote,
+td,
+th {
+  line-height: 1.6em;
+}
+
+ul,
+ol,
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0 0 0 1.6em;
+  padding: 0;
+}
+ol ol li {
+  list-style-type: lower-alpha;
+}
+ol ol ol li {
+  list-style-type: lower-roman;
+}
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+fieldset,
+figure,
+address {
+  margin-bottom: 1.6em;
+}
+address {
+  font-style: normal;
+}
+
+/* Description
+   ========================================================================== */
+
+dl dt {
+  font-weight: 500;
+}
+dd {
+  margin-left: 1em;
+}
+
+/* Citations
+   ========================================================================== */
+
+blockquote {
+  font-size: 16px;
+  font-style: italic;
+  position: relative;
+  padding-left: 1.6em;
+  margin-left: 0;
+  border-left: 2px solid #dbdada;
+}
+blockquote p {
+  margin-bottom: .5em;
+}
+blockquote small,
+cite {
+  color: #777;
+  font-style: italic;
+}
+small,
+blockquote cite {
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Liens
+   ========================================================================== */
+
+a {
+  color: #3570c3;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #3498db;
+}
+
+/* Élément de type Inline 
+   ========================================================================== */
+
+/*Texte barré*/
+del {
+  text-decoration: line-through;
+}
+
+/*Acronymes*/
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 10px;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+figcaption {
+  font-size: 12px;
+  font-style: italic;
+}
+ins,
+mark {
+  background-color: #fddc43;
+  color: #0f0f0f;
+  text-decoration: none;
+}
+pre,
+code,
+kbd,
+samp {
+  font-size: 90%;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+pre {
+  border-left: 5px solid #1abc9c;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 90%;
+  line-height: 1.45em;
+  color: #333333;
+  background: #f6f6f6;
+  padding: 1.6em;
+  overflow: auto;
+}
+code {
+  padding: 3px 3px 1px 3px;
+  display: inline-block;
+  line-height: 1;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+}
+pre code {
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  background: none;
+  line-height: 1.6em;
+}
+kbd {
+  padding: 2px 6px 1px 6px;
+  line-height: 1;
+  display: inline-block;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  color: #333333;
+  font-weight: normal;
+  white-space: nowrap;
+}

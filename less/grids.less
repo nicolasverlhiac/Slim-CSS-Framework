@@ -1,0 +1,412 @@
+/*
+ * =/ Grilles
+ * 
+**************************************************************************************/
+
+.cols-container:after,
+.cols-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cols-container {
+  /* c'est le truc pour pas que le padding-top dans l'élément enfant s'effondre */
+
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
+.cols-row {
+  margin-bottom: 1.6em;
+}
+
+/* Paragraphe et autres
+   ========================================================================== */
+
+.width-100,
+.col-100 {
+  width: 100%;
+}
+.width-90,
+.col-90 {
+  width: 90%;
+}
+.width-80,
+.col-80 {
+  width: 80%;
+}
+.width-75,
+.col-75 {
+  width: 75%;
+}
+.width-70,
+.col-70 {
+  width: 70%;
+}
+.width-66,
+.col-66 {
+  width: 66.6%;
+}
+.width-65,
+.col-65 {
+  width: 65%;
+}
+.width-60,
+.col-60 {
+  width: 60%;
+}
+.width-50,
+.col-50 {
+  width: 50%;
+}
+.width-40,
+.col-40 {
+  width: 40%;
+}
+.width-35,
+.col-35 {
+  width: 35%;
+}
+.width-33,
+.col-33 {
+  width: 33.3%;
+}
+.width-30,
+.col-30 {
+  width: 30%;
+}
+.width-25,
+.col-25 {
+  width: 25%;
+}
+.width-20,
+.col-20 {
+  width: 20%;
+}
+.width-10,
+.col-10 {
+  width: 10%;
+}
+input.width-100,
+input.col-100 {
+  width: 98.6%;
+}
+textarea.width-100,
+textarea.col-100 {
+  width: 98.8%;
+}
+select.width-100,
+select.col-100 {
+  width: 99.4%;
+}
+.cols-row .col-90,
+.cols-row .col-80,
+.cols-row .col-75,
+.cols-row .col-70,
+.cols-row .col-66,
+.cols-row .col-65,
+.cols-row .col-60,
+.cols-row .col-50,
+.cols-row .col-40,
+.cols-row .col-35,
+.cols-row .col-33,
+.cols-row .col-30,
+.cols-row .col-25,
+.cols-row .col-20,
+.cols-row .col-10 {
+  float: left;
+  margin-left: 3%;
+}
+.cols-row .col-90:first-child,
+.cols-row .col-80:first-child,
+.cols-row .col-75:first-child,
+.cols-row .col-70:first-child,
+.cols-row .col-66:first-child,
+.cols-row .col-65:first-child,
+.cols-row .col-60:first-child,
+.cols-row .col-50:first-child,
+.cols-row .col-40:first-child,
+.cols-row .col-35:first-child,
+.cols-row .col-33:first-child,
+.cols-row .col-30:first-child,
+.cols-row .col-25:first-child,
+.cols-row .col-20:first-child,
+.cols-row .col-10:first-child {
+  margin-left: 0;
+}
+.cols-row .col-90 {
+  width: 89.7%;
+}
+.cols-row .col-80 {
+  width: 79.4%;
+}
+.cols-row .col-75 {
+  width: 74.25%;
+}
+.cols-row .col-70 {
+  width: 69.1%;
+}
+.cols-row .col-66 {
+  width: 65.66666666666666%;
+}
+.cols-row .col-65 {
+  width: 65.66666666666666%;
+}
+.cols-row .col-60 {
+  width: 58.800000000000004%;
+}
+.cols-row .col-50 {
+  width: 48.5%;
+}
+.cols-row .col-40 {
+  width: 38.2%;
+}
+.cols-row .col-35 {
+  width: 31.333333333333332%;
+}
+.cols-row .col-33 {
+  width: 31.333333333333332%;
+}
+.cols-row .col-30 {
+  width: 27.9%;
+}
+.cols-row .col-25 {
+  width: 22.75%;
+}
+.cols-row .col-20 {
+  width: 17.6%;
+}
+.cols-row .col-10 {
+  width: 7.3%;
+}
+
+
+/* Colonne poussé
+   ========================================================================== */
+
+.col-push-90,
+.col-push-80,
+.col-push-75,
+.col-push-70,
+.col-push-66,
+.col-push-65,
+.col-push-60,
+.col-push-50,
+.col-push-40,
+.col-push-35,
+.col-push-33,
+.col-push-30,
+.col-push-25,
+.col-push-20,
+.col-push-10 {
+  position: relative;
+}
+.col-push-90 {
+  left: 92.7%;
+}
+.col-push-80 {
+  left: 82.4%;
+}
+.col-push-75 {
+  left: 77.25%;
+}
+.col-push-70 {
+  left: 72.1%;
+}
+.col-push-66 {
+  left: 68.66666666666666%;
+}
+.col-push-65 {
+  left: 68.66666666666666%;
+}
+.col-push-60 {
+  left: 61.800000000000004%;
+}
+.col-push-50 {
+  left: 51.5%;
+}
+.col-push-40 {
+  left: 41.2%;
+}
+.col-push-35 {
+  left: 34.33333333333333%;
+}
+.col-push-33 {
+  left: 34.33333333333333%;
+}
+.col-push-30 {
+  left: 30.9%;
+}
+.col-push-25 {
+  left: 25.75%;
+}
+.col-push-20 {
+  left: 20.6%;
+}
+.col-push-10 {
+  left: 10.3%;
+}
+.cols-row .col-push-droite {
+  float: right;
+}
+
+/* Paragraphe et autres
+   ========================================================================== */
+
+.centre,
+.col-centre {
+  float: none !important;
+  margin: 0 auto !important;
+}
+.col-padding {
+  padding: 1.6em;
+}
+
+/* Colonne split
+   ========================================================================== */
+
+.cols-split .col-90,
+.cols-split .col-80,
+.cols-split .col-75,
+.cols-split .col-70,
+.cols-split .col-66,
+.cols-split .col-65,
+.cols-split .col-60,
+.cols-split .col-50,
+.cols-split .col-40,
+.cols-split .col-35,
+.cols-split .col-33,
+.cols-split .col-30,
+.cols-split .col-25,
+.cols-split .col-20,
+.cols-split .col-10 {
+  margin-left: 0;
+}
+.cols-split .col-90 {
+  width: 90%;
+}
+.cols-split .col-80 {
+  width: 80%;
+}
+.cols-split .col-75 {
+  width: 75%;
+}
+.cols-split .col-70 {
+  width: 70%;
+}
+.cols-split .col-66 {
+  width: 66.6%;
+}
+.cols-split .col-65 {
+  width: 65%;
+}
+.cols-split .col-60 {
+  width: 60%;
+}
+.cols-split .col-50 {
+  width: 50%;
+}
+.cols-split .col-40 {
+  width: 40%;
+}
+.cols-split .col-35 {
+  width: 35%;
+}
+.cols-split .col-33 {
+  width: 33.3%;
+}
+.cols-split .col-30 {
+  width: 30%;
+}
+.cols-split .col-25 {
+  width: 25%;
+}
+.cols-split .col-20 {
+  width: 20%;
+}
+.cols-split .col-10 {
+  width: 10%;
+}
+
+/* Responsive de la grille
+   ========================================================================== */
+
+@media only screen and (max-width: 767px) {
+  .mobile-width-100 {
+    width: 100%;
+  }
+  .cols-row .col-90,
+  .cols-row .col-80,
+  .cols-row .col-75,
+  .cols-row .col-70,
+  .cols-row .col-66,
+  .cols-row .col-65,
+  .cols-row .col-60,
+  .cols-row .col-50,
+  .cols-row .col-40,
+  .cols-row .col-35,
+  .cols-row .col-33,
+  .cols-row .col-30,
+  .cols-row .col-25,
+  .cols-row .col-20,
+  .cols-row .col-10 {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-bottom: 1.6em;
+  }
+  .col-push-90,
+  .col-push-80,
+  .col-push-75,
+  .col-push-70,
+  .col-push-66,
+  .col-push-65,
+  .col-push-60,
+  .col-push-50,
+  .col-push-40,
+  .col-push-35,
+  .col-push-33,
+  .col-push-30,
+  .col-push-25,
+  .col-push-20,
+  .col-push-10 {
+    left: 0;
+  }
+  .cols-row .col-push-droite {
+    float: none;
+  }
+  .cols-mobile-50 .col-90,
+  .cols-mobile-50 .col-80,
+  .cols-mobile-50 .col-75,
+  .cols-mobile-50 .col-70,
+  .cols-mobile-50 .col-66,
+  .cols-mobile-50 .col-65,
+  .cols-mobile-50 .col-60,
+  .cols-mobile-50 .col-40,
+  .cols-mobile-50 .col-30,
+  .cols-mobile-50 .col-35,
+  .cols-mobile-50 .col-33,
+  .cols-mobile-50 .col-25,
+  .cols-mobile-50 .col-20,
+  .cols-mobile-50 .col-10 {
+    float: left;
+    margin-left: 3%;
+    width: 48.5%;
+  }
+  .cols-mobile-50 .col-90:first-child,
+  .cols-mobile-50 .col-80:first-child,
+  .cols-mobile-50 .col-75:first-child,
+  .cols-mobile-50 .col-70:first-child,
+  .cols-mobile-50 .col-66:first-child,
+  .cols-mobile-50 .col-65:first-child,
+  .cols-mobile-50 .col-60:first-child,
+  .cols-mobile-50 .col-40:first-child,
+  .cols-mobile-50 .col-35:first-child,
+  .cols-mobile-50 .col-30:first-child,
+  .cols-mobile-50 .col-33:first-child,
+  .cols-mobile-50 .col-25:first-child,
+  .cols-mobile-50 .col-20:first-child,
+  .cols-mobile-50 .col-10:first-child {
+    margin-left: 0;
+  }
+}
