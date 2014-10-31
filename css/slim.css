@@ -4,8 +4,8 @@
 **************************************************************************************/
 
 /** 
- * Version : v0.34
- * Last Update : 10/07/2014
+ * Version : v0.35
+ * Last Update : 31/10/2014
  * Oficial website : http://slim-css.com
  * Documentation : http://slim-css.com/grille.php
  */
@@ -1510,6 +1510,25 @@ img {
  * =/ Class d'Aide
  * 
 **************************************************************************************/
+
+/* = Resize
+-----------------------------------------------------------------------------*/
+
+.no-resize {
+  resize: none;
+}
+
+.resize-both {
+  resize: both;
+}
+
+.resize-horizontal {
+  resize: horizontal;
+}
+
+.resize-vertical {
+  resize: vertical;
+}
 
 /* = Couleurs
 -----------------------------------------------------------------------------*/
