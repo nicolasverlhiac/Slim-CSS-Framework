@@ -4,8 +4,8 @@
 **************************************************************************************/
 
 /** 
- * Version : v0.35
- * Last Update : 31/10/2014
+ * Version : v0.37
+ * Last Update : 24/12/2014
  * Oficial website : http://slim-css.com
  * Documentation : http://slim-css.com/grille.php
  */
@@ -174,6 +174,9 @@ p.lead {
   margin-bottom: .75em;
 }
 
+p {
+  font-size: 1.1em;
+}
 
 /* Listes
    ========================================================================== */
@@ -222,6 +225,9 @@ address {
 address {
   font-style: normal;
 }
+hr {
+  border-color: rgba(246, 246, 246, 0.5);
+}
 
 /* Description
    ========================================================================== */
@@ -266,7 +272,6 @@ a {
   text-decoration: none;
 }
 
-a:focus,
 a:hover {
   color: #3498db;
 }
@@ -1143,7 +1148,7 @@ button:focus {
 }
 .input{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1;
+  line-height: 1.42857;
   font-size: 14px;
   background: #fff;
   box-shadow: none;
@@ -1155,11 +1160,10 @@ button:focus {
   border: 1px solid #B4B7B8;
   margin: 0 0 20px 0;
   font-size: 14px;
-  height: 40px;
   display: block;
   -webkit-appearance: none;
-  padding: 15px 12px;
-  height: 100%;
+  padding: 12px 12px;
+  height: 46px;
   width: 100%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -1284,6 +1288,28 @@ input[type="radio"].input-error{
   border: none;
 }
 
+/* = Select
+-----------------------------------------------------------------------------*/
+
+select {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #555;
+    font-size: 14px;
+    height: 46px;
+    line-height: 1.42857;
+    padding: 12px 12px;
+    -webkit-border-radius: 2px;
+}
+select:focus {
+    border-color: #009DD6;
+    outline: 0 none;
+}
+select::-moz-placeholder {
+    color: #777;
+    opacity: 1;
+}
 /*
  * =/ Boutons
  * 
@@ -1322,6 +1348,11 @@ input[type="radio"].input-error{
 .btn:before{  
   font-family: "Slim";
 }
+
+a.btn:focus{  
+  color: #ffffff;
+}
+
 
 .petit {
   padding: 10px 15px;
@@ -1365,6 +1396,46 @@ input[type="radio"].input-error{
   color: #fff;
 }
 
+/* = Boutons 3D
+-----------------------------------------------------------------------------*/
+
+
+.btn-3d{ 
+  background:#1ABC9C;
+  border:none;
+  border-radius:3px;
+  color:#fff;
+  padding: 15px 30px;
+  box-shadow:0px 4px 0px #018e5e;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-3d:visited{
+  color:#fff
+  }
+
+.btn-3d:hover,
+.btn-3d:visited:hover{
+  color:#fff;
+  background:#16A085;
+  box-shadow:0px 2px 0px #005b3c
+}
+
+.btn-3d:active{
+  background:#16A085;
+  box-shadow:0px 0px 0px #005b3c
+}
+
 /* = Class d'aide pour les Boutons & Boutons light
 -----------------------------------------------------------------------------*/
 
@@ -1379,7 +1450,7 @@ input[type="radio"].input-error{
 /* = Boutons avec Icones
 -----------------------------------------------------------------------------*/
 
-/* On selectionne toutes les class de font icone, pour leur appliquer le style de .bnt-icon 
+/* On sélectionne toutes les class de font icone, pour leur appliquer le style de .bnt-icon 
 si elles sont contenu dedans. Afin d'eviter que le style de la font soit appliqué par défault */
 
 /*[class^="btn-icon icon-"], 
@@ -1477,6 +1548,101 @@ a.icons {
   background: #7f8c8d
 }
 
+
+/* = Différents style boutons 3D
+-----------------------------------------------------------------------------*/
+
+.btn-green-3d {
+  background: #2ecc71;
+  box-shadow:0px 4px 0px #27AE60;
+}
+.btn-green-3d:hover,
+.btn-green-3d:visited,
+.btn-green-3d:focus{
+  background: #27AE60;
+  box-shadow:0px 2px 0px #16703B;
+}
+.btn-green-3d:active{
+  background: #27AE60;
+  box-shadow:0px 0px 0px;
+}
+
+.btn-red-3d {
+  background: #e74c3c;
+  box-shadow:0px 4px 0px #C0392B;
+}
+.btn-red-3d:hover,
+.btn-red-3d:visited,
+.btn-red-3d:focus {
+  background: #C0392B;
+  box-shadow:0px 2px 0px #77241C;
+}
+.btn-red-3d:active {
+  background: #C0392B;
+  box-shadow:0px 0px 0px;
+}
+
+.btn-blue-3d {
+  background: #3498db;
+  box-shadow:0px 4px 0px #2980b9 ;
+}
+.btn-blue-3d:hover,
+.btn-blue-3d:visited,
+.btn-blue-3d:focus {
+  background: #2980b9;
+  box-shadow:0px 2px 0px #1F5577;
+}
+.btn-blue-3d:active{
+  background: #2980b9;
+  box-shadow:0px 0px 0px;
+}
+
+.btn-dark-3d {
+  background: #34495E;
+  box-shadow:0px 4px 0px #2C3E50;
+}
+.btn-dark-3d:hover,
+.btn-dark-3d:visited,
+.btn-dark-3d:focus {
+  background: #2C3E50;
+  box-shadow:0px 2px 0px #000000;
+}
+.btn-dark-3d:active{
+  background: #2C3E50;
+  box-shadow:0px 0px 0px;
+}
+
+.btn-disable-3d {
+  background: #ecf0f1;
+  color: #b2b2b2;
+  box-shadow:0px 4px 0px #bdc3c7;
+}
+.btn-disable-3d:hover,
+.btn-disable-3d:visited,
+.btn-disable-3d:focus {
+  background: #bdc3c7;
+  box-shadow:0px 2px 0px #74777A;
+}
+.btn-disable-3d:active{
+  background: #bdc3c7;
+  box-shadow:0px 0px 0px;
+}
+
+.btn-grey-3d {
+  background: #95a5a6;
+  box-shadow:0px 4px 0px #7f8c8d;
+}
+.btn-grey-3d:hover,
+.btn-grey-3d:visited,
+.btn-grey-3d:focus {
+  background: #7f8c8d;
+  box-shadow:0px 2px 0px #454C4C;
+}
+.btn-grey-3d:active{
+  background: #7f8c8d;
+  box-shadow:0px 0px 0px;
+}
+
 /*
  * =/ Images, Vidéos et Embed
  * 
@@ -1510,6 +1676,7 @@ img {
  * =/ Class d'Aide
  * 
 **************************************************************************************/
+
 
 /* = Resize
 -----------------------------------------------------------------------------*/
@@ -1727,89 +1894,101 @@ img {
   text-transform: uppercase;
 }
 
-/* = Box Alert
+/*
+ * =/ Notifications
+ * 
+**************************************************************************************/
+
+.danger-box a,
+.danger-box-icon a{
+  font-weight: 900;
+  text-decoration: underline;
+  color: #e67e22;
+}
+
+.info-box a,
+.info-box-icon a{
+  font-weight: 900;
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+.error-box a,
+.error-box-icon a{
+  font-weight: 900;
+  text-decoration: underline;
+  color: #e74c3c;
+}
+
+/* = Notifications sans icone
 -----------------------------------------------------------------------------*/
 
-.info-box{
+.info-box,
+.info-box-icon{
   background: #F4F8FA;
   color: #2980b9;
   border-left: 5px solid #3498db;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 20px;
   margin: 20px 0 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
-.info-box:before{
-  font-family: "Slim";
-  content: "\e683";
-  font-size: 40px;
-  padding: 28px 20px 0 10px;
-  float: left;
-}
-.info-box a{
-  font-weight: 900;
-  text-decoration: underline;
-  color: #2980b9;
-}
 
-.info-box p{
-  padding-left: 75px;
-}
-
-.danger-box {
+.danger-box,
+.danger-box-icon {
   background: #FCF8F2;
   color: #e67e22;
   border-left: 5px solid #f39c12;
-  padding: 10px;
+  padding: 10px 20px;
   margin: 20px 0 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.danger-box:before{
-  font-family: "Slim";
-  content: "\e687";
-  font-size: 40px;
-  padding: 28px 20px 0 10px;
-  float: left;
-}
-.danger-box a{
-  font-weight: 900;
-  text-decoration: underline;
-  color: #e67e22;
-}
-
-.danger-box p{
-  padding-left: 75px;
-}
-
-.error-box {
+.error-box,
+.error-box-icon{
   background: #FDF7F7;
   color: #e74c3c;
   border-left: 5px solid #e74c3c;
-  padding: 10px;
+  padding: 10px 20px;
   margin: 20px 0 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.error-box:before{
+/* = Notifications avec icone
+-----------------------------------------------------------------------------*/
+
+.info-box-icon:before{
   font-family: "Slim";
-  content: "\e678";
+  content: "\e683";
   font-size: 40px;
-  padding: 28px 20px 0 10px;
+  padding: 28px 20px 0 0;
   float: left;
 }
 
-.error-box a{
-  font-weight: 900;
-  text-decoration: underline;
-  color: #e74c3c;
+.danger-box-icon:before{
+  font-family: "Slim";
+  content: "\e687";
+  font-size: 40px;
+  padding: 28px 20px 0 0;
+  float: left;
 }
 
-.error-box p{
-  padding-left: 75px;
+.error-box-icon:before{
+  font-family: "Slim";
+  content: "\e678";
+  font-size: 40px;
+  padding: 28px 20px 0 0;
+  float: left;
 }
+
+.info-box-icon p,
+.danger-box-icon p,
+.error-box-icon p{
+  padding-left: 65px;
+}
+
