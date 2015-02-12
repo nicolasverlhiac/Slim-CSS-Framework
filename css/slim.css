@@ -4,8 +4,8 @@
 **************************************************************************************/
 
 /** 
- * Version : v0.37
- * Last Update : 24/12/2014
+ * Version : v0.38
+ * Last Update : 03/01/2015
  * Oficial website : http://slim-css.com
  * Documentation : http://slim-css.com/grille.php
  */
@@ -74,6 +74,13 @@ textarea {overflow: auto;}
 optgroup {font-weight: bold;}
 table {border-collapse: collapse;border-spacing: 0;}
 td,th {padding: 0;}
+
+/* Box model for all elements, when you work with paddings and borders */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 /*
  * =/ Typographie
@@ -1288,6 +1295,20 @@ input[type="radio"].input-error{
   border: none;
 }
 
+/* = Inputs Line
+-----------------------------------------------------------------------------*/
+
+.input-line .input{
+  font-size: 16px;
+  padding: 17px 20px;
+  height: 56px;
+}
+
+.input-line input[type="submit"]{
+  margin: 0;
+  padding: 
+}
+
 /* = Select
 -----------------------------------------------------------------------------*/
 
@@ -1557,8 +1578,7 @@ a.icons {
   box-shadow:0px 4px 0px #27AE60;
 }
 .btn-green-3d:hover,
-.btn-green-3d:visited,
-.btn-green-3d:focus{
+.btn-green-3d:visited:hover{
   background: #27AE60;
   box-shadow:0px 2px 0px #16703B;
 }
@@ -1572,8 +1592,7 @@ a.icons {
   box-shadow:0px 4px 0px #C0392B;
 }
 .btn-red-3d:hover,
-.btn-red-3d:visited,
-.btn-red-3d:focus {
+.btn-red-3d:visited:hover{
   background: #C0392B;
   box-shadow:0px 2px 0px #77241C;
 }
@@ -1587,8 +1606,7 @@ a.icons {
   box-shadow:0px 4px 0px #2980b9 ;
 }
 .btn-blue-3d:hover,
-.btn-blue-3d:visited,
-.btn-blue-3d:focus {
+.btn-blue-3d:visited:hover {
   background: #2980b9;
   box-shadow:0px 2px 0px #1F5577;
 }
@@ -1602,8 +1620,7 @@ a.icons {
   box-shadow:0px 4px 0px #2C3E50;
 }
 .btn-dark-3d:hover,
-.btn-dark-3d:visited,
-.btn-dark-3d:focus {
+.btn-dark-3d:visited:hover{
   background: #2C3E50;
   box-shadow:0px 2px 0px #000000;
 }
@@ -1618,8 +1635,7 @@ a.icons {
   box-shadow:0px 4px 0px #bdc3c7;
 }
 .btn-disable-3d:hover,
-.btn-disable-3d:visited,
-.btn-disable-3d:focus {
+.btn-disable-3d:visited:hover{
   background: #bdc3c7;
   box-shadow:0px 2px 0px #74777A;
 }
@@ -1633,8 +1649,7 @@ a.icons {
   box-shadow:0px 4px 0px #7f8c8d;
 }
 .btn-grey-3d:hover,
-.btn-grey-3d:visited,
-.btn-grey-3d:focus {
+.btn-grey-3d:visited:hover{
   background: #7f8c8d;
   box-shadow:0px 2px 0px #454C4C;
 }
@@ -1670,6 +1685,12 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Gestion des blocs arrondies */
+
+.rounded {
+  border-radius: 100%;
 }
 
 /*
@@ -1759,6 +1780,10 @@ img {
 }
 .bg-asbestos{
   background: #7f8c8d
+}
+
+.white {
+  color: white;
 }
 .turquoise {
   color: #1abc9c; 
@@ -1875,11 +1900,17 @@ img {
 .begin {
   margin-top: 0 !important;
 }
+.light {
+  font-weight: 200;
+}
 .normal {
   font-weight: normal;
 }
+.semi-bold {
+  font-weight: 500;
+}
 .bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 .italic {
   font-style: italic;
@@ -1893,6 +1924,29 @@ img {
 .upper {
   text-transform: uppercase;
 }
+
+/* = Postionnement Margin
+-----------------------------------------------------------------------------*/
+
+.margin-top-10 {margin-top: 10px}
+.margin-top-20 {margin-top: 20px}
+.margin-top-30 {margin-top: 30px}
+.margin-top-40 {margin-top: 40px}
+.margin-top-50 {margin-top: 50px}
+.margin-top-60 {margin-top: 60px}
+.margin-top-70 {margin-top: 70px}
+.margin-top-80 {margin-top: 80px}
+.margin-top-90 {margin-top: 90px}
+.margin-top-100 {margin-top: 100px}
+
+/* = Postionnement Margin
+-----------------------------------------------------------------------------*/
+
+.padding-10 {padding: 10px 0;}
+.padding-20 {padding: 20px 0;}
+.padding-30 {padding: 30px 0;}
+.padding-40 {padding: 40px 0;}
+.padding-50 {padding: 50px 0;}
 
 /*
  * =/ Notifications
