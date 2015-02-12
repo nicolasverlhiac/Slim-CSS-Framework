@@ -4,10 +4,13 @@
 **************************************************************************************/
 
 /** 
- * Version : v0.38
- * Last Update : 03/01/2015
- * Oficial website : http://slim-css.com
- * Documentation : http://slim-css.com/grille.php
+ * @project        SLIM CSS FRAMEWORK
+ * @version        v0.38
+ * @lastmodified   Fev, 12 2015
+ * @media          print, screen
+ * @author         Nicolas Verlhiac
+ * @site           http://slim-css.com
+ * @license        Creative Common
  */
 
 /* Sommaire
@@ -26,7 +29,7 @@
     */
 
  
- /* Make the web and have fun */
+/* Make the web and have fun */
 
 /*
  * =/ Normalize.css v3.0.0 (Custom for Slim) - git.io/normalize
@@ -141,13 +144,13 @@ h6 {
   line-height: 1.6em;
   margin-bottom: .25em;
 }
+
 /* Sous-titre
    ========================================================================== */
 
 .soustitre{
   color: rgba(0,0,0,0.6);
 }
-
 h1.soustitre,
 h2.soustitre,
 h3.soustitre,
@@ -180,7 +183,6 @@ p.lead {
   line-height: 1.4em;
   margin-bottom: .75em;
 }
-
 p {
   font-size: 1.1em;
 }
@@ -199,7 +201,6 @@ td,
 th {
   line-height: 1.6em;
 }
-
 ul,
 ol,
 ul ul,
@@ -278,7 +279,6 @@ a {
   color: #3570c3;
   text-decoration: none;
 }
-
 a:hover {
   color: #3498db;
 }
@@ -334,7 +334,6 @@ samp {
   font-size: 90%;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
 pre {
   border-left: 5px solid #1abc9c;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
@@ -385,11 +384,9 @@ kbd {
 }
 .cols-container {
   /* c'est le truc pour pas que le padding-top dans l'élément enfant s'effondre */
-
   padding-top: 1px;
   margin-top: -1px;
 }
-
 .cols-row {
   margin-bottom: 1.6em;
 }
@@ -833,9 +830,11 @@ table.table-bande tbody tr:nth-child(odd) td {
 
 /* = Tableaux avec hover
 -----------------------------------------------------------------------------*/
+
 table.table-hover tbody tr:hover td {
   background-color: #f4f4f4;
 }
+
 /* Responsive Tables */
 .table-container {
   width: 100%;
@@ -863,6 +862,7 @@ table.table-hover tbody tr:hover td {
 
 /* = Barre de Navigation Horizontale - normale
 -----------------------------------------------------------------------------*/
+
 .navbar {
   margin-bottom: 1.6em;
 }
@@ -884,7 +884,6 @@ table.table-hover tbody tr:hover td {
   float: left;
   margin-right: 1.6em;
 }
-
 .navbar ul li a,
 .navbar ul li span {
   display: block;
@@ -899,6 +898,7 @@ table.table-hover tbody tr:hover td {
   cursor: text;
   color: rgba(0, 0, 0, 0.4);
 }
+
 /* = Barre de Navigation pleine largeur - Horizontale
 -----------------------------------------------------------------------------*/
 
@@ -1062,6 +1062,7 @@ table.table-hover tbody tr:hover td {
 
 /* =Pagination
 -----------------------------------------------------------------------------*/
+
 .pagination {
   position: relative;
   left: -9px;
@@ -1096,8 +1097,10 @@ table.table-hover tbody tr:hover td {
   background-color: #1abc9c;
   color: #fff;
 }
+
 /* =Responsive
 -----------------------------------------------------------------------------*/
+
 @media only screen and (max-width: 767px) {
   .navbar-left,
   .navbar-right,
@@ -1138,17 +1141,14 @@ label{
     font-size: 14px;
     cursor: pointer;
 }
-
 label.help:after{
   font-family: "Slim";
   content: "\e686";
 } 
-
 .input:focus{
     color: #404040;
     border: 1px solid #1abc9c;
 }
-
 button:active,
 button:focus {
   outline: none;
@@ -1176,7 +1176,6 @@ button:focus {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 input[type="range"] {
   position: relative;
   top: 3px;
@@ -1186,7 +1185,6 @@ textarea {
   line-height: 1.35em;
   height: auto;
 }
-
 fieldset {
   padding: 1.6em;
   margin-bottom: 1.6em;
@@ -1197,52 +1195,41 @@ legend {
   padding: 0 1em;
   margin-left: -1em;
 }
-
 input[type="submit"]{
   margin: 10px 0 0 0;
 }
-
-
 .input-success,
 .group-input-success input {
   border-color: #27ae60;
   color: #27ae60;
 }
-
 .input-problem,
 .group-input-problem input {
   border-color: #f39c12;
   border-radius: 0 2px 2px 0;
   color: #f39c12;
 }
-
 .input-error,
 .group-input-error input {
   border-color: #e74c3c;
   border-radius: 0 2px 2px 0;
   color: #e74c3c;
 }
-
 .group-input-success label{
   color: #27ae60;
 }
-
 .group-input-problem label{
   color: #f39c12;
 }
-
 .group-input-error label{
   color: #e74c3c;
 }
-
 .input-icon {
   position: relative;
 }
-
 .input-icon input{
   padding-left: 60px;
 }
-
 .input-icon span {
   display: block;
   height: 46px;
@@ -1257,38 +1244,31 @@ input[type="submit"]{
   background: #1abc9c;
   color: #fff;
 }
-
 .facultatif {
   border: 1px solid #b4b4b4;
   color: #777;
   background: #eee;
 }
-
 .group-input label{
   display: inline-block;
   margin-right: 30px;
   cursor: pointer;
 }
-
 .group-input label input{
   margin-right: 5px;
 }
-
 label input{
   margin-right: 5px;
 }
-
 .input-success input[type="checkbox"], 
 .input-success input[type="radio"]{
   color: #27ae60;
 }
-
 input[type="checkbox"].input-problem, 
 input[type="radio"].input-problem{
   color: #f39c12;
   border: none;
 }
-
 input[type="checkbox"].input-error, 
 input[type="radio"].input-error{
   color: #e74c3c;
@@ -1303,7 +1283,6 @@ input[type="radio"].input-error{
   padding: 17px 20px;
   height: 56px;
 }
-
 .input-line input[type="submit"]{
   margin: 0;
   padding: 
@@ -1331,6 +1310,7 @@ select::-moz-placeholder {
     color: #777;
     opacity: 1;
 }
+
 /*
  * =/ Boutons
  * 
@@ -1365,22 +1345,17 @@ select::-moz-placeholder {
   background: #16A085;
   color: #fff;
 }
-
 .btn:before{  
   font-family: "Slim";
 }
-
 a.btn:focus{  
   color: #ffffff;
 }
-
-
 .petit {
   padding: 10px 15px;
   font-size: 12px;
   vertical-align: bottom;
 }
-
 .moyen {
   padding: 15px 22px;
   font-size: 14px;
@@ -1411,7 +1386,6 @@ a.btn:focus{
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 .btn-lg:hover {
   background: #1ABC9C;
   color: #fff;
@@ -1419,7 +1393,6 @@ a.btn:focus{
 
 /* = Boutons 3D
 -----------------------------------------------------------------------------*/
-
 
 .btn-3d{ 
   background:#1ABC9C;
@@ -1440,18 +1413,15 @@ a.btn:focus{
   cursor: pointer;
   white-space: nowrap;
 }
-
 .btn-3d:visited{
   color:#fff
-  }
-
+}
 .btn-3d:hover,
 .btn-3d:visited:hover{
   color:#fff;
   background:#16A085;
   box-shadow:0px 2px 0px #005b3c
 }
-
 .btn-3d:active{
   background:#16A085;
   box-shadow:0px 0px 0px #005b3c
@@ -1463,7 +1433,6 @@ a.btn:focus{
 .btn-square {
   border-radius: 0;
 }
-
 .btn-round {
   border-radius: 100px;
 }
@@ -1499,7 +1468,6 @@ si elles sont contenu dedans. Afin d'eviter que le style de la font soit appliqu
   background: #16A085;
   color: #fff;
 }
-
 .btn-icon:before {
   color: #fff;
   font-family: "Slim";
@@ -1510,7 +1478,6 @@ si elles sont contenu dedans. Afin d'eviter que le style de la font soit appliqu
   border-radius: 2px 0 0 2px ;
   line-height: inherit;
 }
-
 a.icons {
   font-family: "Slim";
   -moz-osx-font-smoothing: grayscale;
@@ -1521,7 +1488,6 @@ a.icons {
   position: relative;
 }
 
-
 /* = Différents style boutons
 -----------------------------------------------------------------------------*/
 
@@ -1531,44 +1497,37 @@ a.icons {
 .btn-green:hover{
   background: #27ae60
 }
-
 .btn-blue {
   background: #3498db
 }
 .btn-blue:hover {
   background: #2980b9
 }
-
 .btn-dark {
   background: #34495e
 }
 .btn-dark:hover {
   background: #2c3e50
 }
-
 .btn-red {
   background: #e74c3c;
 }
 .btn-red:hover {
   background: #c0392b;
 }
-
 .btn-disable {
   background: #ecf0f1;
-  color: #b2b2b2;
-  
+  color: #b2b2b2; 
 }
 .btn-disable:hover {
   background: #bdc3c7;
 }
-
 .btn-grey {
   background: #95a5a6  
 }
 .btn-grey:hover{
   background: #7f8c8d
 }
-
 
 /* = Différents style boutons 3D
 -----------------------------------------------------------------------------*/
@@ -1586,7 +1545,6 @@ a.icons {
   background: #27AE60;
   box-shadow:0px 0px 0px;
 }
-
 .btn-red-3d {
   background: #e74c3c;
   box-shadow:0px 4px 0px #C0392B;
@@ -1600,7 +1558,6 @@ a.icons {
   background: #C0392B;
   box-shadow:0px 0px 0px;
 }
-
 .btn-blue-3d {
   background: #3498db;
   box-shadow:0px 4px 0px #2980b9 ;
@@ -1614,7 +1571,6 @@ a.icons {
   background: #2980b9;
   box-shadow:0px 0px 0px;
 }
-
 .btn-dark-3d {
   background: #34495E;
   box-shadow:0px 4px 0px #2C3E50;
@@ -1628,7 +1584,6 @@ a.icons {
   background: #2C3E50;
   box-shadow:0px 0px 0px;
 }
-
 .btn-disable-3d {
   background: #ecf0f1;
   color: #b2b2b2;
@@ -1643,7 +1598,6 @@ a.icons {
   background: #bdc3c7;
   box-shadow:0px 0px 0px;
 }
-
 .btn-grey-3d {
   background: #95a5a6;
   box-shadow:0px 4px 0px #7f8c8d;
@@ -1688,7 +1642,6 @@ img {
 }
 
 /* Gestion des blocs arrondies */
-
 .rounded {
   border-radius: 100%;
 }
@@ -1705,15 +1658,12 @@ img {
 .no-resize {
   resize: none;
 }
-
 .resize-both {
   resize: both;
 }
-
 .resize-horizontal {
   resize: horizontal;
 }
-
 .resize-vertical {
   resize: vertical;
 }
@@ -1721,6 +1671,7 @@ img {
 /* = Couleurs
 -----------------------------------------------------------------------------*/
 
+/* Backgrounds */
 .bg-turquoise {
   background: #1abc9c; 
 }    
@@ -1782,6 +1733,7 @@ img {
   background: #7f8c8d
 }
 
+/* Colors */
 .white {
   color: white;
 }
@@ -1858,7 +1810,6 @@ img {
 .show {
   display: block;
 }
-
 .vertical-align {
   position: relative;
   top: 50%;
@@ -1866,7 +1817,6 @@ img {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .group:after {
   content: "";
   display: table;
@@ -1959,14 +1909,12 @@ img {
   text-decoration: underline;
   color: #e67e22;
 }
-
 .info-box a,
 .info-box-icon a{
   font-weight: 900;
   text-decoration: underline;
   color: #2980b9;
 }
-
 .error-box a,
 .error-box-icon a{
   font-weight: 900;
@@ -1988,7 +1936,6 @@ img {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 .danger-box,
 .danger-box-icon {
   background: #FCF8F2;
@@ -2000,7 +1947,6 @@ img {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
 .error-box,
 .error-box-icon{
   background: #FDF7F7;
@@ -2023,7 +1969,6 @@ img {
   padding: 28px 20px 0 0;
   float: left;
 }
-
 .danger-box-icon:before{
   font-family: "Slim";
   content: "\e687";
@@ -2031,7 +1976,6 @@ img {
   padding: 28px 20px 0 0;
   float: left;
 }
-
 .error-box-icon:before{
   font-family: "Slim";
   content: "\e678";
@@ -2039,10 +1983,8 @@ img {
   padding: 28px 20px 0 0;
   float: left;
 }
-
 .info-box-icon p,
 .danger-box-icon p,
 .error-box-icon p{
   padding-left: 65px;
 }
-
